@@ -1,8 +1,5 @@
-
-const { json } = require("express");
-const e = require("express");
 const fs = require("fs");
-const db = require("./db/db.json");
+const notesData = require("../db/db.json");
 
 module.exports = function(app){
     
