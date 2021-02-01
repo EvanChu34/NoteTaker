@@ -11,17 +11,23 @@
 
 ## Deployed Application 
 
+
 ---------------------------	
 
 ## About
+Note taker is an application that everyone is able to use. The application allows the user to create notes and saves them to a list.
+The user can write a title of the note in the indicated spot. The user than continue to write the note in the note sections. The user
+has the option to save the note as there is a save button on the upper right hand corner. There is also a button to write new notes.
+Once the note is written and saved, the note will appear on a list next to a fresh note. The user can delete the note off the list. 
+This can be done by pressing the delete button on list.  
 
 ---------------------------	
 
 ## Getting Started 
-
----------------------------	
-
-## 
+Before you start, you must install a few things:
+* Express
+* Path 
+* Jest
 
 ---------------------------	
 
