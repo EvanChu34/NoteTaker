@@ -24,21 +24,20 @@ module.exports = function(app){
         } else{
             req.body.id = JSON.stringify(JSON.parse(notesData[notesData.length - 1].id) +1)
         }
-        console.log("req.body.id: " +req.body.id);
+        console.log("req.body.id: " + req.body.id);
 
         notesData.push(req.body);
 
         writeToDB(notesData);
         console.log(notesData);
 
-        res.json(res.body);
+        res.json(req.body);
     });
 
     app.delete("/api/notes/:id", function(req,res){
         let id = req.params.id.toString();
         for (i=0; i< notesData.length; i++){
             if(notesData[i].id == id){
-                console.log("match!");
                 res.send(notesData[i])
                 notesData.splice(i,1);
                 break;
